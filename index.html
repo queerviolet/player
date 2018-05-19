@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <style>
+    html, body { background: black; padding: 0; margin: 0; }
+    video {
+      width: 100vw; height: 100vh;
+    }
+
+    #hud {
+      position: fixed;
+      top: 4px; left: 4px;
+      font-family: monospace;
+      font-size: 24px;
+      color: white;
+      text-shadow: 1px 1px black;
+    }
+  </style>
+  <body>        
+    <video id=video src=deep-learning.mov></video>
+    <div id=hud hidden>Slide: <span id=hudSlide></span> <span id=time></span></div>
+    <script type=module src=play.js></script>
+  </body>
+</html>
